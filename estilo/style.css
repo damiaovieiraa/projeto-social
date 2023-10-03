@@ -17,38 +17,31 @@ nav {
 }
 
 nav > a {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
     display: block;
     margin: 10px 10px 24px 10px;
 }
 
 nav > a > img {
     width: 50px;
-    height: 50px;
     border-radius: 100%;
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.300);
+    box-sizing: border-box;
 } 
 
 nav > a > img:hover {
-    border: 2px solid gray;
-    transition-duration: 1s;
-}    
-
-nav > a:hover {
+    border: 2px solid rgba(255, 255, 255, 0.616);
     transform: translate(-3px,-3px);
     box-shadow: 7px 7px 10px 7px rgba(0, 0, 0, 0.300);
-    transition-duration: .3s;
-}
+    transition: transform .3s, border .5s;
+}    
 
-section#conteudo > img {
+section#conteudo > img#telefone {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-iframe {
+iframe#tela {
     height: 471.5px;
     width: 268px;
     position: absolute;
